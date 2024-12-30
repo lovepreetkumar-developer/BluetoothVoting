@@ -10,6 +10,7 @@
 <img src="https://github.com/user-attachments/assets/68becb4e-9c29-4cec-8caf-1c07c3e775bc" alt="8" width="350" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
 <img src="https://github.com/user-attachments/assets/4a5c6c5b-3c38-4320-bc7b-32f5931063d2" alt="9" width="350" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
 
+
 Bluetooth Voting is an Android application designed for Bluetooth-based polling and surveys. It supports two user types, Admin and Client, each with distinct functionalities:
 
 Admin Features:
