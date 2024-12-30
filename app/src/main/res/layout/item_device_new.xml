@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="pos"
+            type="Integer" />
+
+        <variable
+            name="model"
+            type="com.example.bluetoothlechat.models.DeviceModel" />
+
+        <variable
+            name="callback"
+            type="com.example.bluetoothlechat.base.BaseItem.OnItemClickListener" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v)->callback.onItemClick(v,model,pos)}"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/device_name"
+            style="@style/CustomTextViewMedium"
+            android:layout_width="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:text="@{model.name}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Device info here" />
+
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:text="@{model.address}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/device_name"
+            tools:text="Address" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@color/color_text_gray" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

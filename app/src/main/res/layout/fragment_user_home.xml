@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="callback"
+            type="com.example.bluetoothlechat.base.BaseCallback" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_splash"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_12sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CustomTextViewRegular"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:includeFontPadding="false"
+                android:text="@string/user_with_brackets"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_logout"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="@{(v)->callback.onClick(v)}"
+                android:padding="@dimen/_5sdp"
+                app:srcCompat="@drawable/ic_three_line_menu" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_car_logo"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/image_app_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewMedium"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_toEndOf="@+id/img_car_logo"
+                    android:includeFontPadding="false"
+                    android:text="@string/app_name"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_16sdp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_honeymoon_packages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_connection_status"
+                style="@style/CustomTextViewRegular"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:includeFontPadding="false"
+                android:text="Connection : "
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/_8sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CustomTextViewMedium"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:includeFontPadding="false"
+                android:text="@string/all_published_votes"
+                android:textColor="@color/green" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CustomTextViewRegular"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:includeFontPadding="false"
+                android:text="@string/vote_each_of_the_following_as_per_your_choice"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_no_data_found"
+                    style="@style/CustomTextViewRegular"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_data_found" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_votes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/item_vote" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

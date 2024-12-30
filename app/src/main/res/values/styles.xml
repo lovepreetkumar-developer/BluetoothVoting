@@ -1,0 +1,127 @@
+<!--
+     Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomTextViewLight" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_text_gray</item>
+        <item name="android:fontFamily">@font/gotham_light</item>
+    </style>
+
+    <style name="CustomTextViewBook" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_text_gray</item>
+        <item name="android:fontFamily">@font/gotham_book</item>
+    </style>
+
+    <style name="CustomTextViewRegular" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_text_gray</item>
+        <item name="android:fontFamily">@font/gotham_regular</item>
+    </style>
+
+    <style name="CustomTextViewMedium" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_text_gray</item>
+        <item name="android:fontFamily">@font/gotham_medium</item>
+    </style>
+
+    <style name="CustomTextViewBold" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_text_gray</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+    </style>
+
+    <style name="CustomEditText" parent="android:Widget.EditText">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/color_text_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/color_text_gray_dark</item>
+        <item name="android:fontFamily">@font/gotham_book</item>
+    </style>
+
+    <style name="CustomEditTextWithBorder" parent="android:Widget.EditText">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/color_text_gray</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <!--<item name="android:background">@drawable/bg_edit_text_border</item>-->
+        <item name="android:fontFamily">@font/gotham_regular</item>
+        <item name="android:paddingStart">@dimen/_12sdp</item>
+        <item name="android:paddingEnd">@dimen/_12sdp</item>
+        <item name="android:paddingTop">@dimen/_7sdp</item>
+        <item name="android:paddingBottom">@dimen/_7sdp</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_38sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CustomButtonRound" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_32sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:background">@drawable/bg_round_button_primary</item>-->
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog.Alert">
+
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomDialog.Window</item>
+        <!--<item name="android:layout_marginStart">@dimen/_10sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_10sdp</item>-->
+
+    </style>
+
+    <style name="CustomDialog.Window" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/zoom_normal</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+</resources>

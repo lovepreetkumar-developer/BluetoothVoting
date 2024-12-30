@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <color name="colorPrimary">#37a82a</color>
+    <color name="colorPrimaryDark">#37a82a</color>
+    <color name="colorAccent">#37a82a</color>
+
+    <color name="remote_message_background">#0288D1</color>
+    <color name="local_message_background">#D1DBE0</color>
+    <color name="color_text_gray">#7D7D7D</color>
+    <color name="color_text_gray_dark">#252525</color>
+    <color name="text_color_gray">#6F6F6F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_text_gray_border">#E0E0E0</color>
+    <color name="green">#37a82a</color>
+    <color name="gray_dark_two">#56908785</color>
+    <color name="gray_light">#C3C3C3</color>
+    <color name="gray">#BABABA</color>
+    <color name="light_black">#0E0E0E</color>
+    <color name="color_thunder_bird">#D71616</color>
+    <color name="color_blue">#07375E</color>
+
+</resources>

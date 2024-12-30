@@ -1,0 +1,80 @@
+<!--
+     Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">B-voting</string>
+    <string name="no_devices_found">No device found</string>
+    <string name="chat_title">Chat</string>
+    <string name="device_list_title">Pair with new device</string>
+    <string name="location_required_error">The location permission is required to support Bluetooth Low Energy communication</string>
+    <string name="grant_permission_prompt">Grant Location Permission</string>
+    <string name="active_scan_message">Scanning for devices</string>
+    <string name="bt_not_enabled">Please enable Bluetooth in order to scan for devices</string>
+    <string name="enable_bluetooth_prompt">Enable Bluetooth</string>
+    <string name="bt_ads_not_supported">Bluetooth Advertisements are not supported on this device</string>
+    <string name="chat_confirm_message">Would you like to chat with %1$s</string>
+    <string name="chat_deny_button">No</string>
+    <string name="chat_confirm_button">Yes</string>
+    <string name="no_connected_device_message">Not connected to a device</string>
+    <string name="connect_device_prompt">Connect with nearby devices</string>
+    <string name="send_message_button">Send Message</string>
+    <string name="chatting_with_device">Chatting with %1$s</string>
+    <string name="your_device_address">Your device address:</string>
+    <string name="scanning_header">Choose a device to connect with:</string>
+    <string name="title">Title</string>
+    <string name="your_request_has_been_submitted">Your request has been submitted, We will contact you shortly. Thank You.</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="comments">Comments</string>
+    <string name="write_here">Write Here…</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="email_optional">Email (optional)</string>
+    <string name="basic_service">Basic Service</string>
+    <string name="duis_lacinia">Duis lacinia mauris felis, sit amet iaculis dolor semper a. Suspendisse potenti. Sed dignissim augue lorem, id tempus urna vulputate in. Donec sed vestibulum ex. Praesent vel luctus arcu. Vestibulum nec augue mi. Quisque in eros augue. Praesent placerat orci faucibus enim imperdiet, tincidunt</string>
+    <string name="ok">OK</string>
+    <string name="this_app_makes_your_life_easier">This app makes your life easier for Voting</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="all_published_votes">All Published Votes</string>
+    <string name="vote_each_of_the_following_as_per_your_choice">Vote each of the following as per your choice.</string>
+    <string name="no_data_found">No data found.</string>
+    <string name="are_you_sure_to_logout">Are you sure you want to logout?</string>
+    <string name="are_you_sure_to_delete_vote">Are you sure you want to delete vote?</string>
+    <string name="cancel">Cancel</string>
+    <string name="admin_with_brackets">(Admin)</string>
+    <string name="user_with_brackets">(User)</string>
+    <string name="following_are_the_votes_that_have_published">Following are the votes that have published.</string>
+    <string name="location_required">Location Required</string>
+    <string name="questions">Questions</string>
+    <string name="add_options">Add Options</string>
+    <string name="create_vote">Create Vote</string>
+    <string name="vote_created_successfully">Vote created successfully.</string>
+    <string name="add">Add</string>
+    <string name="option">Option</string>
+    <string name="vote_details">Vote Details</string>
+    <string name="submit_my_vote">Submit My Vote</string>
+    <string name="vote_results">Vote Results</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="vote_submitted_successfully">Vote submitted successfully</string>
+    <string name="options">Options</string>
+    <string name="select_device">Select Device</string>
+    <string name="delete_vote">Delete Vote</string>
+
+</resources>

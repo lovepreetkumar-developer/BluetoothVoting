@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="pos"
+            type="Integer" />
+
+        <variable
+            name="model"
+            type="com.example.bluetoothlechat.models.VoteOptionModel" />
+
+        <variable
+            name="callback"
+            type="com.example.bluetoothlechat.base.BaseItem.OnItemClickListener" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/device_name"
+            style="@style/CustomTextViewMedium"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="start"
+            android:onClick="@{(v)->callback.onItemClick(v,model,pos)}"
+            android:padding="@dimen/_10sdp"
+            android:text="@{model.name}"
+            android:textColor="@color/color_text_gray"
+            app:set_option_background="@{model}"
+            app:set_option_text_color="@{model}"
+            tools:background="@drawable/bg_border_gray_light_10sdp"
+            tools:text="10 Km" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CustomTextViewBold"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_toEndOf="@+id/device_name"
+            android:text='@{"Votes : "+model.selected_users_id.size()}'
+            android:textColor="@color/green"
+            android:visibility="@{model.need_to_view_count?View.VISIBLE:View.GONE}"
+            tools:text="Votes : 3" />
+
+    </RelativeLayout>
+
+</layout>

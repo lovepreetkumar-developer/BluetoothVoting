@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="pos"
+            type="Integer" />
+
+        <variable
+            name="model"
+            type="com.example.bluetoothlechat.models.VoteModel" />
+
+        <variable
+            name="callback"
+            type="com.example.bluetoothlechat.base.BaseItem.OnItemClickListener" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{(v)->callback.onItemClick(v,model,pos)}"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="@dimen/_2sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@color/green" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewMedium"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/view"
+                    android:includeFontPadding="false"
+                    android:text="@{model.vote_title}"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_13sdp"
+                    tools:text="VOTE TITLE" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewBold"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text='@{"Name : "+model.admin_name}'
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    tools:text="Name : John Doe" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text='@{"Description : "+model.description}'
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    tools:text="This vote is very important for us, please rate and watch" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
